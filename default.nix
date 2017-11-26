@@ -16,9 +16,23 @@ in {
     elasticsearch = kubenix.buildResources {
       configuration = ./test/elasticsearch.nix;
     };
+
     redis = kubenix.buildResources {
       configuration = ./test/redis.nix;
     };
+
+    elasticsearch-curator = kubenix.buildResources {
+      configuration = ./test/elasticsearch-curator.nix;
+    };
+
+    redis = kubenix.buildResources {
+      configuration = ./test/redis.nix;
+    };
+
+    nginx = kubenix.buildResources {
+      configuration = ./test/nginx.nix;
+    };
+    
     galera = kubenix.buildResources {
       configuration = ./test/galera.nix;
     };
